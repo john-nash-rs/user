@@ -20,9 +20,10 @@ public class User {
     }
 
     // Parameterized constructor
-    public User(String name, String email) {
+    public User(Long id, String name, String email) {
         this.name = name;
         this.email = email;
+        this.id = id;
     }
 
     // Getters and Setters
@@ -49,5 +50,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
