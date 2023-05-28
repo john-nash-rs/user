@@ -19,3 +19,9 @@ DELETE
 
 curl -X DELETE http://localhost:8080/users/1
 
+Validation Error
+
+curl -X POST -H "Content-Type: application/json" -d '{
+"email": "johndoe@example.com"
+}' http://localhost:8080/users
+
